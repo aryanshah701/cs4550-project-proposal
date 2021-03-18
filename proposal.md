@@ -72,8 +72,7 @@ study spot they want to go to. The user's name will be taken off the
 list when they log out or leave, just like the count will go down.
 
 
-## What persistent state other than users will you be storing in a
-## postgres DB?
+## What persistent state other than users will you be storing in a postgres DB?
 
   The main focus of the app is to hold information on possible study
 spots in the user's area. That means we will have a table that

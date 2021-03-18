@@ -72,8 +72,7 @@ study spot they want to go to. The user's name will be taken off the
 list when they log out or leave, just like the count will go down.
 
 
-## What persistent state other than users will you be storing in a
-## postgres DB?
+## What persistent state other than users will you be storing in a postgres DB?
 
   The main focus of the app is to hold information on possible study
 spots in the user's area. That means we will have a table that
@@ -113,3 +112,18 @@ instead of requiring any manual input from the user. The list of
 locations that the user sees on their home page would also update
 dynamically if the user traveled to a new location, such as moving
 to a new city. 
+
+
+## Experiment 1
+
+
+
+## Experiment 2
+
+
+
+## What kinds of users do you expect to have use your app?
+
+
+
+## For each kind of users, what is their most common workflow / user story?

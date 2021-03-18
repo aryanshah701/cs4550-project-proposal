@@ -112,3 +112,18 @@ instead of requiring any manual input from the user. The list of
 locations that the user sees on their home page would also update
 dynamically if the user traveled to a new location, such as moving
 to a new city. 
+
+
+## Experiment 1
+
+
+
+## Experiment 2
+
+
+
+## What kinds of users do you expect to have use your app?
+
+
+
+## For each kind of users, what is their most common workflow / user story?

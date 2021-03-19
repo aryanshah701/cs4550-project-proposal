@@ -175,5 +175,47 @@ and libraries in Boston, convinces us that this feature is
 implementable.
 
 ## What kinds of users do you expect to have use your app?
+  We expect that our app would be widely used by college aged
+students. As a global pandemic has made finding a quiet and safe
+place to study a difficult task. Our app not only has destinations
+to study, but also a live count on the amount of people in a given
+study area. This will allow students who are looking for a more
+secluded place the opportunity to find one close to them. We believe
+that these features could be used primarily by college age students,
+but also possibly high school aged students and remote workers.
+  This app is intended to be super user friendly allowing a wide
+range of users to access its capabilities. A simple phone search
+on Google will allow varying age groups to access information
+on study spaces in their area. The coolest part is that remote
+workers can check their favorite coffee shops and libraries
+to see their current capacities. This allows even more than
+just college age users to enjoy this app even though students
+would be our primary target. This app will help college students
+be responsible and productive during a global pandemic.
 
 ## For each kind of users, what is their most common workflow / user story?
+  A typical user would first encounter a login page. After logging in, the
+see a geo-map which includes study sites located in their area. A user
+would then be able to interact with a location and see various attributes.
+These attributes would include a current count of the amount of people
+at the study location, a rating, and comments. A user would be allowed
+to rate the location, add a comment, or update the capacity number of
+the study location. Users will also be able to add new study locations
+to the app.
+  Nick has a long day of classes and needs to find a nice quiet spot to
+finish up some homework. He goes to his room but finds his roommate is
+listening to loud music. He decides to login Go-Study with his username
+and password. Nick sees that his closest option is the Curry student
+center. Unfortunately, there are fifteen students actively studying
+there so he decides against it due to capacity concerns.
+Nick also sees that ISEC only a few extra minute walk currently only
+has five people studying right now. He also sees that ISEC has a 4.4
+out of 5 star rating coinciding  with many supportive comments.
+One comment reads "ISEC offers a large space with many outlets and
+tables to accommodate your studying needs." Nick then makes his
+way to ISEC and finds only 3 people still studying. He updates
+the app with the current population. After peacefully  completing his
+homework, he adds a five star review and a comment. The comment
+reads, "ISEC is a modern and resourceful study space that everyone
+should definitely add to their list of favorite study spots,
+but only when I'm not there ;)"

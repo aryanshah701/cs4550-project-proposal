@@ -1,11 +1,9 @@
-#Project Proposal Document
-
+# Project Proposal Document
 
 ## Who is on your team?
 
   Our team members are Eli Frank, Nicholas Bagley, Frank Pizzella,
 and Aryan Shah.
-
 
 ## What is your project idea?
 
@@ -90,7 +88,6 @@ limit users in updating and deleting records that they should not.
 This includes deleting other users, other user's comments, and
 existing locations.
 
-
 ## What "something neat" thing are you going to do?
 
   We are planning on using the HTML Geolocation API to identify a
@@ -111,19 +108,72 @@ updated automatically when a user enters and exits a study spot
 instead of requiring any manual input from the user. The list of
 locations that the user sees on their home page would also update
 dynamically if the user traveled to a new location, such as moving
-to a new city. 
-
+to a new city.
 
 ## Experiment 1
 
-
+This experiment focused on the HTML Geolocation API as well as the
+Google Maps API. Overall, the Geolocation API was relatively easy
+to use. We were able to access a user�s location information such
+as their latitude, longitude, and the time stamp of when this
+location was recorded. Additionally, the API gives us access to
+additional information such as the accuracy of the position, the
+altitude, which direction they are heading in, and at what speed
+they are heading. Of these remaining fields, the most useful ones
+will likely be the direction someone is heading and the accuracy of
+the position. We could potentially use someone�s heading to figure
+out study spots in that direction. Something interesting to note
+about the position is that it seems to be less accurate when using
+wifi as opposed to cellular data, but this is probably okay since we
+assume that most people using this site will be on their phones. On
+the other hand, the Google Maps API was a good bit more difficult to
+get the hang of. Google�s Maps API required an account and API key.
+There seems to be some limit on how frequently we can use Google�s
+Maps API for free, but for our purposes and volume, we think we will
+be fine. The primary issue with getting this API functioning is that
+we were unable to access it directly, so we needed to use a library.
+Of the libraries we tried so far, one called google-map-react seemed
+to work relatively well. We were able to get an interactive map to
+show up on a webpage, with the map centered at our current location.
+However, we were unable to place a marker for our location working
+correctly while using this library, which would be helpful for
+easily scanning a map to find study locations. So we may have to
+do some further experimentation with other Google Maps React
+libraries to try and get the desired behavior. However, overall,
+this experiment appears to have been successful.  
 
 ## Experiment 2
 
+This experiment was about understanding the Google Places API that
+is going to be used in order to source out the initial data for our
+app. One of the app's major concerns is its ability to have suitable
+data for the initial users. While the app's true benefit comes from
+the study places the users of the app register for other users to
+benefit from, the google places API can be user to provide users
+suitable places to study initially.
 
+For this experiment, we tried the various available google places API
+endpoints through a simple Phoenix web app. We set up the auth key
+required to make requests and experiment with the results from the
+endpoints place/findplacefromtext, place/nearbysearch, and
+place/textsearch. We also experimented with the various optional
+parameters, which may help fine-tune our results to places suitable
+to study. One of the major difficulties we faced involved
+understanding what it meant for a place to be suitable for "studying"
+and how we could communicate that to the API so that it returned
+the most relevant results. Finally, we decided that the
+place/nearbysearch endpoint with the "type" query would suit our
+needs best. Certain categories of places such as cafes and libraries
+are known to have a stable wifi connection, outlets, and seating,
+making them ideal for studying. Hence, by using the predefined types
+of Cafe and Library, we are able to make requests to the API for the
+nearest suitable study places. The HTML Geolocation API becomes
+crucial in allowing us to identify the user's location so that we
+can provide the user with the most relevant results. Hence, our small
+web-app, capable of retrieving and displaying the names of all cafes
+and libraries in Boston, convinces us that this feature is
+implementable.
 
 ## What kinds of users do you expect to have use your app?
-
-
 
 ## For each kind of users, what is their most common workflow / user story?

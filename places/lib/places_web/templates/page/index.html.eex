@@ -1,0 +1,26 @@
+<div class='container m-5'>
+  <div class='row'>
+    <div class='col'>
+      <h1>Google Places API - Test App<h1>
+    </div>
+  </div>
+  <div class='row my-4'>
+    <div class='col-7 form-group'>
+      <%= form_for @conn, Routes.page_path(@conn, :search), fn f -> %>
+        <%= text_input f, :search, class: "form-control my-3" %>
+        <%= submit "Search Cafes Nearby", class: "btn btn-primary" %>
+      <% end %> 
+
+      <%= if @data do %>
+        <p>Cafes</p>
+          <%= for data <- @data do %>
+            <div class="row">
+              <div class="col">
+                <p><%= data["name"] %></p>
+              </div>
+            </div>
+          <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
